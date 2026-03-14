@@ -11,3 +11,6 @@ class Product:
             f"Price: {self.price}\n"
             f"Quantity: {self.quantity}\n"
         )
+
+    def update_quantity(self, new_quantity):
+        self.quantity = new_quantity
