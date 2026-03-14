@@ -8,7 +8,7 @@ class Product:
     def display_info(self):
         return (
             f"Product Name: {self.name}\n"
-            f"Price: {self.price}\n"
+            f"Price: {self.price:,.2f} EUR\n"
             f"Quantity: {self.quantity}\n"
         )
 
