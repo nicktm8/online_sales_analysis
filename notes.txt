@@ -1,3 +1,0 @@
-
-removing product call func in main
-print(manager.remove_product("Macbook Air M3"))
