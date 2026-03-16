@@ -20,5 +20,5 @@ class ProductManager:
             if product.name == name:
                 self.products.remove(product)
                 return f"Product {name} is removed."
-            return f"Product {name} is not found."
+        return f"Product {name} is not found."
             
