@@ -1,2 +1,6 @@
 __pycache__
 notes.txt
+*.pyc
+.DS_Store
+.env
+config.json
