@@ -15,4 +15,4 @@ class Cart:
     def display_cart(self):
         for product in self.cart_items:
             print(product.display_info())
-                 
+        print(f"Total Cart price is: {self.total_cart_price():,.2f} EUR")         
