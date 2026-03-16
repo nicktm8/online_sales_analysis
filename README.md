@@ -1,10 +1,11 @@
-# 🛒 Python OOP – Online Sales Analysis
+# 🛒 Python OOP Product Inventory & Cart System
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
-[![OOP](https://img.shields.io/badge/Paradigm-Object%20Oriented-green)]()
-[![Status](https://img.shields.io/badge/Project-Portfolio%20Ready-brightgreen)]()
+[![OOP](https://img.shields.io/badge/Paradigm-Object%20Oriented-green)](https://github.com/nicktm8/online_sales_analysis)
+[![Git](https://img.shields.io/badge/Version%20Control-Git%20%26%20GitHub-orange)](https://github.com/nicktm8/online_sales_analysis/commits/main)
+[![Status](https://img.shields.io/badge/Project-Portfolio%20Ready-brightgreen)](https://github.com/nicktm8/online_sales_analysis)
 
-A modular Python project for managing product inventory and a shopping cart, built using Object-Oriented Programming and version-controlled with Git and GitHub.
+A modular Python project for managing product inventory and a shopping cart using Object-Oriented Programming principles and Git & GitHub for version control.
 
 ---
 
@@ -13,9 +14,20 @@ A modular Python project for managing product inventory and a shopping cart, bui
 - Product creation with name, price, and quantity
 - Product inventory management (add, remove, display)
 - Total inventory value calculation
-- Shopping cart with dynamic item and quantity management
+- Shopping cart with dynamic item addition
 - Total cart price calculation
-- Clean separation of concerns across multiple modules
+- Clean, readable console output with EUR formatting
+
+---
+
+## 🗃️ Sample Products
+
+| Product | Price (EUR) | Quantity |
+|---|---|---|
+| Macbook Pro M3 | 1,550.00 | 15 |
+| Samsung Galaxy S25 Ultra | 1,100.00 | 10 |
+| Samsung Galaxy Tab S11 | 899.00 | 20 |
+| Dell Gaming Monitor (27 inch) | 250.00 | 30 |
 
 ---
 
@@ -23,16 +35,15 @@ A modular Python project for managing product inventory and a shopping cart, bui
 
 ### ✅ Classes & Objects
 
-- `Product` — represents a single product with attributes and methods
-- `ProductManager` — manages a collection of `Product` objects
-- `Cart` — handles cart items and calculates totals
-- Each class is instantiated and used in `main.py`
+- `Product` — represents a single product with name, price, and quantity
+- `ProductManager` — manages a collection of `Product` objects (add, remove, display, calculate inventory value)
+- `Cart` — handles shopping cart logic, including adding items and computing total price
 
 ### ✅ Git & GitHub Workflow
 
 - Project developed using Git for version control
-- Commits tracked across the full development lifecycle
-- Repository hosted and managed on GitHub
+- Organized commits tracking incremental development
+- Hosted publicly on GitHub as a portfolio project
 
 ---
 
@@ -40,12 +51,12 @@ A modular Python project for managing product inventory and a shopping cart, bui
 
 ```
 online_sales_analysis/
-├── product.py
-├── product_manager.py
+├── .gitignore
 ├── cart.py
-├── main.py
 ├── config.json
-└── .gitignore
+├── main.py
+├── product.py
+└── product_manager.py
 ```
 
 ---
@@ -85,9 +96,16 @@ Product Name: Samsung Galaxy S25 Ultra
 Price: 1,100.00 EUR
 Quantity: 10
 
-...
+Product Name: Samsung Galaxy Tab S11
+Price: 899.00 EUR
+Quantity: 20
+
+Product Name: Dell Gaming Monitor (27 inch)
+Price: 250.00 EUR
+Quantity: 30
+
 --------------------
-Total inventory value: 63,530.00 EUR
+Total inventory value: 72,780.00 EUR
 
 ----------Cart----------
 
@@ -95,8 +113,15 @@ Product Name: Macbook Pro M3
 Price: 1,550.00 EUR
 Quantity: 1
 
-...
-Total Cart price is: 4,400.00 EUR
+Product Name: Samsung Galaxy S25 Ultra
+Price: 1,100.00 EUR
+Quantity: 2
+
+Product Name: Dell Gaming Monitor (27 inch)
+Price: 250.00 EUR
+Quantity: 3
+
+Total Cart price is: 4,500.00 EUR
 ```
 
 ---
@@ -105,19 +130,21 @@ Total Cart price is: 4,400.00 EUR
 
 This project was developed to strengthen understanding of:
 
-- Designing and working with Python classes and objects
-- Building multi-file, modular Python projects
+- Designing and using Python classes and objects
+- Building modular, multi-file Python projects
 - Managing code with Git and GitHub
-- Applying OOP principles to a real-world-style use case
+- Applying OOP concepts in a practical, real-world scenario
+
+It serves as a clean backend-style foundation suitable for further expansion.
 
 ---
 
 ## 🔮 Possible Future Improvements
 
-- CLI interactive menu
+- CLI interactive menu for managing products and cart
 - Data persistence (JSON or SQLite)
 - Unit testing (pytest)
-- Search and filter products by name or price
+- Discount and coupon system
 - Flask or FastAPI REST API version
 
 ---
